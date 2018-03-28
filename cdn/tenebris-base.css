@@ -1,5 +1,5 @@
-body.splash-page {
-    width: 2251px;
+
+.splash-page {
     height: 1500px;
     /* Black background with opacity over top of image */
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
@@ -11,7 +11,6 @@ body.splash-page {
 }
 
 .splash-page img.logo {
-    width: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
