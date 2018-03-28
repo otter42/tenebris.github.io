@@ -1,9 +1,12 @@
 body.splash-page {
     width: 2251px;
     height: 1500px;
-    background-size: cover;
-    /* Black background with opacity */
-    background: rgba(0, 0, 0, 0.75) url('http://cdn.tenebris.us/backgrounds/lake-mcdonald-landscape-panorama-sunset-158385.jpeg') no-repeat center;
+    /* Black background with opacity over top of image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url('http://cdn.tenebris.us/backgrounds/lake-mcdonald-landscape-panorama-sunset-158385.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -12,6 +15,5 @@ body.splash-page {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -250px;
-    margin-left: -250px;
+    transform: translate(-50%, -50%);
 }
