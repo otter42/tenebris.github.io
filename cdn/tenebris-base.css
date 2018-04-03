@@ -1,18 +1,24 @@
 
-.splash-page {
+header.splash-page {
     height: 1500px;
-    /* Black background with opacity over top of image */
+    /* Black background with opacity of 50% over top of image */
+    background: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.5)),to(rgba(0, 0, 0, 0.5))),
+    url('http://cdn.tenebris.us/backgrounds/lake-mcdonald-landscape-panorama-sunset-158385.jpeg') no-repeat center center fixed;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url('http://cdn.tenebris.us/backgrounds/lake-mcdonald-landscape-panorama-sunset-158385.jpeg') no-repeat center center fixed;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url('http://cdn.tenebris.us/backgrounds/lake-mcdonald-landscape-panorama-sunset-158385.jpeg') no-repeat center center fixed;
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
     url('http://cdn.tenebris.us/backgrounds/lake-mcdonald-landscape-panorama-sunset-158385.jpeg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 .splash-page img.logo {
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
