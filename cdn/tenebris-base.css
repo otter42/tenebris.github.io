@@ -23,7 +23,8 @@ html,body {
     padding-top: 2em;
 }
 .splash-page img.logo {
-    max-width: 100%;
+    max-width: 500px;
+    margin-top: 150px;
     width: 50%;
     position: -webkit-sticky;
     position: sticky;
